@@ -18,5 +18,6 @@
   color: #333;
   font-size: 1rem;
   position: fixed;
+  max-height: 80px;
 }
 </style>

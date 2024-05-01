@@ -1,8 +1,11 @@
 <template>
-    <header class="header-container">
-        <h1 class="header-title"> TravelAI </h1>
-        <p class="header-subtitle">Planning your dreams</p>
-    </header>
+  <header class="header-container">
+      <!-- router-link para redirecionar para a página inicial -->
+      <router-link to="/" class="header-title-link">
+          <h1 class="header-title">TravelAI</h1>
+      </router-link>
+      <p class="header-subtitle">Planning your dreams</p>
+  </header>
 </template>
 
 
@@ -11,20 +14,30 @@
 .header-container {
   background-color: white;
   text-align: center;
-  border-bottom: 1px solid #eaeaea; /* Adiciona uma linha sutil na parte inferior do cabeçalho */
+  border-bottom: 1px solid #eaeaea;
 }
 
 .header-title {
   margin: 0;
   color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Esta é uma escolha de fonte segura e elegante */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.0rem;
+}
+
+.header-title-link {
+  text-decoration: none; /* Remove qualquer sublinhado padrão de links */
+}
+
+.header-title-link:hover, .header-title-link:focus {
+  color: #007BFF; /* Cor azul ao passar o mouse ou focar */
+  cursor: pointer; /* Cursor em forma de ponteiro para indicar clicabilidade */
+  text-decoration: underline; /* Sublinha o título ao passar o mouse */
 }
 
 .header-subtitle {
   color: #555;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
-  margin-top: 0.5rem; /* Adiciona um pouco de espaço entre o título e o subtítulo */
+  margin-top: 0.5rem;
 }
 </style>

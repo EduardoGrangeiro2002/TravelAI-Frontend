@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     css: path.resolve(__dirname, 'assets/css'),
   },
 
-  css: ['@/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
 })
